@@ -15,6 +15,7 @@ public class SwitchCon : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         gm = GameObject.Find("gamemanager").GetComponent<GameManager>();
+        gm.AddSwitch(objName, this);
 	}
 	
 	// Update is called once per frame
