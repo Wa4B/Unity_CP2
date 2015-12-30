@@ -12,7 +12,9 @@ public class TriggerControll : MonoBehaviour {
 	void Update () {
 		if (GameObject.Find ("gamemanager").GetComponent<GameManager> ().status == "start") {
 			GetComponent<AreaEffector2D> ().enabled = true;
-		} else {
+            GameObject.Find("gamemanager").GetComponent<GameManager>().status = "play";
+
+        } else {
 			GetComponent<AreaEffector2D> ().enabled = false;
 		}
 	}
